@@ -60,53 +60,30 @@ XGBoost (Final Model)	0.8675	0.5978	0.8618
 Final chosen model: XGBoost Classifier
 Saved using pickle for production
 
-**Project Structure:**
-Bank_Customer_Churn/
-│
-├── notebook.ipynb
-├── data/
-│   └── Bank Customer Churn Prediction.csv
-|   └── cleaned_bank_churn.csv
-│
-├── models/
-│   └── churn_model.pkl
-│   └── scaler.pkl
-│
-├── src/
-|   ├──models/
-│   |  └── churn_model.pkl
-│   |  └── scaler.pkl
-│   ├── train.py
-│   └── predict.py
-│
-├── requirements.txt
-├── Dockerfile
-└── README.md
-
 **Steps to run the project:**
 
-Run Locally
-1. Clone the repository
+Run Locally:
+1. Clone the repository:
 git clone https://github.com/Vinod-Nayak/bank-churn-api.git
 cd bank-churn-api
 
-2. Install dependencies
+2. Install dependencies:
 pip install -r requirements.txt
 
-3. Train the model
+3. Train the model:
 python src/train.py
 
-4. Run the API
+4. Run the API:
 uvicorn src.predict:app --reload
 
 Visit API docs:
 👉 http://127.0.0.1:8000/docs
 
 **🐳 Docker Deployment:**
-1. Build Image
+1. Build Image:
 docker build -t bank-churn-api .
 
-2. Run container
+2. Run container:
 docker run -p 8000:8000 bank-churn-api
 
 API Available at:
