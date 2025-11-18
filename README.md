@@ -77,7 +77,7 @@ python src/train.py
 uvicorn src.predict:app --reload
 
 Visit API docs:
-👉 http://127.0.0.1:8000/docs
+-> http://127.0.0.1:8000/docs
 
 **🐳 Docker Deployment:**
 1. Build Image:
@@ -87,16 +87,16 @@ docker build -t bank-churn-api .
 docker run -p 8000:8000 bank-churn-api
 
 API Available at:
-👉 http://localhost:8000/docs
+-> http://localhost:8000/docs
 
 **☁️ Cloud Deployment (Render):**
 Application is live and publicly accessible:
 
 🌍 Live App URL:
-👉 https://bank-churn-api.onrender.com
+-> https://bank-churn-api.onrender.com
 
 🌍 Swagger UI:
-👉 https://bank-churn-api.onrender.com/docs
+-> https://bank-churn-api.onrender.com/docs
 
 **Example Prediction Request:**
 
