@@ -64,8 +64,7 @@ Saved using pickle for production
 
 Run Locally:
 1. Clone the repository:
-git clone https://github.com/Vinod-Nayak/bank-churn-api.git
-
+git clone https://github.com/Vinod-Nayak/bank-churn-api.git | 
 cd bank-churn-api
 
 3. Install dependencies:
