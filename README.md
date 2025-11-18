@@ -64,16 +64,17 @@ Saved using pickle for production
 
 Run Locally:
 1. Clone the repository:
-git clone https://github.com/Vinod-Nayak/bank-churn-api.git 
+git clone https://github.com/Vinod-Nayak/bank-churn-api.git
+
 cd bank-churn-api
 
-2. Install dependencies:
+3. Install dependencies:
 pip install -r requirements.txt
 
-3. Train the model:
+4. Train the model:
 python src/train.py
 
-4. Run the API:
+5. Run the API:
 uvicorn src.predict:app --reload
 
 Visit API docs:
